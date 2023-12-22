@@ -46,5 +46,5 @@ if __name__ == '__main__':
     reg_dict()
     menu()
 ```
-Вы можете почитать про сиракузскую последовательность [тут]([https://ru.wikipedia.org/wiki/Гипотеза_Коллатца](https://discopal.ispras.ru/img_auth.php/8/82/Greedy-covering.beam.pdf)https://discopal.ispras.ru/img_auth.php/8/82/Greedy-covering.beam.pdf)
+Вы можете почитать про сиракузскую последовательность [тут](https://discopal.ispras.ru/img_auth.php/8/82/Greedy-covering.beam.pdf)
 ![](http://images.myshared.ru/62/1347752/slide_16.jpg)
