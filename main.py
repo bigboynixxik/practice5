@@ -3,15 +3,20 @@
 Программа, реализующую решение задачи покрытия
 множества с помощью жадных алгоритмов.
 '''
+from __future__ import annotations
 
 
-def solution(region: set, diction: dict) -> str:
+def solution(region: set, diction: dict) -> str | list:
     '''
-    Функция возвращает ответ на задауч. (Искоmые регионы покрытия)
-    :param diction: (int) - Первый аргумент
-    :param region: (dict) - Второй аргумент
-    :return ans(list) - ответ на задачу:
-    :return st(str) - ответа нет(:
+    Функция возвращает искоmые регионы покрытия
+
+    Params:
+        diction (type: dict) - словарь с операторами связи
+        region (type: set) - множество всех регионов
+
+    Returns:
+        ans (type: list) - содержит ответ на задачу
+        st (type: str) - вывод того, что ответа на данную задачу нет
     '''
     ans = []
     st = ''
@@ -36,10 +41,12 @@ def solution(region: set, diction: dict) -> str:
     return ans
 
 
-def reg_dict():
+def reg_dict() -> dict:
     '''
-    Обработка операторов связи
-    :return dictionary(dict) - словарь с операторами связи и их регионами покрытия:
+    Данная функция обрабатывает операторов связи
+
+    Return:
+         dictionary (type: dict) - словарь с операторами связи и их регионами покрытия
     '''
     dictionary = {}
 
@@ -74,10 +81,12 @@ def reg_dict():
     return dictionary
 
 
-def reg_regions():
+def reg_regions() -> set:
     '''
     Обработка необходимых для покрытия регионов
-    :return need_regions(set) - необходимые для  покрытия регионы:
+
+    Return:
+         need_regions (type: set) - необходимые для  покрытия регионы
     '''
     need_regions = set()
     try:
@@ -100,10 +109,13 @@ def reg_regions():
     return need_regions
 
 
-def menu():
+def menu() -> None:
     '''
-    Запускает програmmу и создаёт её mеню.
-    :return answer:
+    Запускает меню. В данной функции обрабатывается поведение программы.
+    У пользователя появляется выбор того, что бы он хотел сделать.
+
+    Return:
+        None
     '''
     count = 0
     while True:
